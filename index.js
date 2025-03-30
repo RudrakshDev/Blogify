@@ -9,7 +9,7 @@ const blogRoute = require('./routers/blog');
 const Blog = require('./models/blog');
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 
 connectMongoDB(process.env.MONGO_URL)
     .then(() => console.log("MongoDB Connected"))
